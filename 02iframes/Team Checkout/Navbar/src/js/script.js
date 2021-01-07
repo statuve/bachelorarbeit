@@ -1,9 +1,5 @@
 const bc = new BroadcastChannel('eventChannel');
 
-bc.onmessage = function (ev) {
-    if(ev.data == "buttonClicked") {
-        var zahl = parseInt(document.getElementById("zahl").innerHTML);
-        document.getElementById("zahl").innerHTML = zahl + 1;
-    }
-    console.log("ich sehe es");
+bc.onmessage = function (e) {
+    console.log(e.data);
 }
