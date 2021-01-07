@@ -4,6 +4,6 @@ console.log(bc.name);
 
 bc.postMessage("wtf");
 
-bc.onmessage = function (ev) {
-    console.log("jaja");
+bc.onmessage = function (e) {
+    console.log(e.data);
 }
