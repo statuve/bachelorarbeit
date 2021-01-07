@@ -4,4 +4,5 @@ const theButton = document.getElementById("button");
 
 theButton.addEventListener("click", function() {
     bc.postMessage("buttonClicked");
+    console.log("hallo");
 })
