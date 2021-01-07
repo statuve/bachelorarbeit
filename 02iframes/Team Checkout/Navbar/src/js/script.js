@@ -5,4 +5,5 @@ bc.onmessage = function (ev) {
         var zahl = parseInt(document.getElementById("zahl").innerHTML);
         document.getElementById("zahl").innerHTML = zahl + 1;
     }
+    console.log("ich sehe es");
 }
